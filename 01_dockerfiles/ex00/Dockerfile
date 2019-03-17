@@ -6,6 +6,5 @@ RUN apk update \
 
 CMD ["vim"]
 
-# docker build -t ex00
-# docker build -t ex00 ex00/  if you're building from outside this folder
+# docker build -t ex00 .
 # docker run -it --rm ex00
