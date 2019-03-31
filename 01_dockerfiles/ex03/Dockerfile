@@ -36,12 +36,10 @@ ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && \
 
 # add more power to the VM:
 # docker-machine stop Char && VBoxManage modifyvm Char --cpus 2 && VBoxManage modifyvm Char --memory 4096 && docker-machine start Char && eval $(docker-machine env Char)
-#
-# To open Gitlab:
+
+# access web client, create a user and interact via GIT:
 # Type the external_url into your web browser: 'https://192.168.99.100'
 # Create your new Gitlab password
 # Log in with 'root' as your username + your new password
-#
-# -------------------
-# HTTPS:
-# export GIT_SSL_NO_VERIFY=true
+# create a new git repo
+# export GIT_SSL_NO_VERIFY=true git clone <https://repo_address.git>

@@ -24,3 +24,12 @@ ENTRYPOINT sh ts3server_minimal_runscript.sh
 
 # docker build -t ex01 .
 # docker run -it -p 9987:9987/udp -p 10011:10011 -p 30033 --rm ex01
+
+# launch Teamspeak
+# continue without logging in
+# choose your nickname: Drew
+# Drop down menu: Connections -> Connect
+# replace "server nickname or address" with the IP address of the container (00_how_to_docker/02)
+# copy in ServerAdmin privilege key that appears in terminal
+
+# Enter Chat Message...
