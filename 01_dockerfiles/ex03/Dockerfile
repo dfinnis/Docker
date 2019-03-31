@@ -34,8 +34,14 @@ ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && \
 # docker build -t ex03 .
 # docker run -it --rm -p 80:80 -p 2200:22 -p 443:443 --privileged ex03
 
-# HTTPS:
-# export GIT_SSL_NO_VERIFY=true
-
 # add more power to the VM:
 # docker-machine stop Char && VBoxManage modifyvm Char --cpus 2 && VBoxManage modifyvm Char --memory 4096 && docker-machine start Char && eval $(docker-machine env Char)
+#
+# To open Gitlab:
+# Type the external_url into your web browser: 'https://192.168.99.100'
+# Create your new Gitlab password
+# Log in with 'root' as your username + your new password
+#
+# -------------------
+# HTTPS:
+# export GIT_SSL_NO_VERIFY=true
