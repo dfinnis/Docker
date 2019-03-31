@@ -12,4 +12,4 @@ RUN ln -sv /usr/share/cowsay/cows/docker.cow /usr/share/cowsay/cows/default.cow
 
 CMD ["cowsay"]
 
-# docker run docker/whalesay cowsay Hello World
+# docker run docker/whalesay cowsay "Maximum Bonus Points"
