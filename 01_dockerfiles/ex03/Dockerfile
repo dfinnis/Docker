@@ -4,8 +4,10 @@ FROM debian
 # 22: SSH
 EXPOSE 443 80 22
 
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get upgrade -y && \
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive \
+	apt-get upgrade -y && \
 	apt-get install -y ca-certificates openssh-server wget postfix
+
 RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
 RUN wget https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh && \
@@ -17,7 +19,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /etc/gitlab/ssl
 RUN chmod 700 /etc/gitlab/ssl
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-	-subj /C=FR/ST=0/L=Paris/O=42/OU=0/CN=192.168.99.102/emailAddress=dfinnis@student.42.fr \
+	-subj /C=FR/ST=0/L=Paris/O=42/OU=0/CN=192.168.99.102/emailAddress=aschukin@student.42.fr \
 	-keyout /etc/gitlab/ssl/selfsigned.key -out /etc/gitlab/ssl/selfsigned.crt
 
 RUN echo "external_url \"https://192.168.99.100\"" >> /etc/gitlab/gitlab.rb
