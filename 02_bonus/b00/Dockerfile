@@ -6,8 +6,7 @@ RUN apt-get update && apt-get -y upgrade && \
 	WORKDIR /home/projects
 
 	COPY max.py max.py
-
-RUN python3 max.py
+	RUN python3 max.py
 
 # a basic Python3 dev environment
 

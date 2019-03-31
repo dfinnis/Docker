@@ -19,7 +19,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /etc/gitlab/ssl
 RUN chmod 700 /etc/gitlab/ssl
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-	-subj /C=FR/ST=0/L=Paris/O=42/OU=0/CN=192.168.99.102/emailAddress=aschukin@student.42.fr \
+	-subj /C=FR/ST=0/L=Paris/O=42/OU=0/CN=192.168.99.100/emailAddress=dfinnis@student.42.fr \
 	-keyout /etc/gitlab/ssl/selfsigned.key -out /etc/gitlab/ssl/selfsigned.crt
 
 RUN echo "external_url \"https://192.168.99.100\"" >> /etc/gitlab/gitlab.rb
@@ -42,4 +42,4 @@ ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && \
 # Create your new Gitlab password
 # Log in with 'root' as your username + your new password
 # create a new git repo
-# export GIT_SSL_NO_VERIFY=true git clone <https://repo_address.git>
+# GIT_SSL_NO_VERIFY=true git clone <https://repo_address.git>
