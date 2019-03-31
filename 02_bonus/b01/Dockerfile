@@ -1,15 +1,12 @@
-FROM ubuntu:14.04
+FROM debian
 
-# install cowsay, and move the "default.cow" out of the way so we can overwrite it with "docker.cow"
-RUN apt-get update && apt-get install -y cowsay --no-install-recommends && rm -rf /var/lib/apt/lists/* \
-	&& mv /usr/share/cowsay/cows/default.cow /usr/share/cowsay/cows/orig-default.cow
+RUN apt-get update && apt-get upgrade -y && \
+	apt-get install -y vim net-tools nmap
 
-# "cowsay" installs to /usr/games
-ENV PATH $PATH:/usr/games
+# a basic local network scanning environment
 
-COPY docker.cow /usr/share/cowsay/cows/
-RUN ln -sv /usr/share/cowsay/cows/docker.cow /usr/share/cowsay/cows/default.cow
+# docker build -t b04 .
+# docker run -it --rm b04
 
-CMD ["cowsay"]
-
-# docker run docker/whalesay cowsay "Maximum Bonus Points"
+# nmap 192.168.99.100
+# exit
