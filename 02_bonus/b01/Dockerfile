@@ -5,8 +5,8 @@ RUN apt-get update && apt-get upgrade -y && \
 
 # a basic local network scanning environment
 
-# docker build -t b04 .
-# docker run -it --rm b04
+# docker build -t b01 .
+# docker run -it --rm b01
 
 # nmap 192.168.99.100
 # exit

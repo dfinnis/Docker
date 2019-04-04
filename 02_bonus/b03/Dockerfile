@@ -6,5 +6,5 @@ RUN apt-get update && apt-get upgrade -y && \
 ENTRYPOINT /usr/games/fortune | /usr/games/cowsay -f ghostbusters
 
 # making the cow speak
-# docker build -t b04 .
-# docker run -it --rm b04
+# docker build -t b03 .
+# docker run -it --rm b03
