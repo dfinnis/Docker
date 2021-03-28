@@ -1,6 +1,24 @@
 # Docker
 
-Intro to Docker and Dockerfiles
+Intro to Docker and Dockerfiles.
+
+See the [subject](https://github.com/dfinnis/Docker/blob/master/subject.pdf) for more details.
+
+#### Final Score 125/100
+
+
+## Getting started
+
+Install [VirtualBox](https://www.virtualbox.org/).
+
+Install *docker* and *docker-machine* with Brew. <br>
+```brew install docker``` <br>
+```brew install docker-machine```
+
+Now you are ready to run docker commands and dockerfiles.
+
+
+## Overview
 
 * [**00_how_to_docker**](https://github.com/dfinnis/Docker/tree/master/00_how_to_docker) - Docker commands
 
@@ -18,18 +36,3 @@ Intro to Docker and Dockerfiles
   [2.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b02/Dockerfile) Debian for basic network testing <br>
   [3.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b03/Dockerfile) Debian with fortune | cowsay generated images <br>
   [4.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b04/Dockerfile) Debian with Python3 dev environment
-
-See the [subject](https://github.com/dfinnis/Docker/blob/master/subject.pdf) for more details.
-
-#### Final Score 125/100
-
-
-## Getting started
-
-Install [VirtualBox](https://www.virtualbox.org/).
-
-Install *docker* and *docker-machine* with Brew. <br>
-```brew install docker``` <br>
-```brew install docker-machine```
-
-Now you are ready to run docker commands and dockerfiles.
