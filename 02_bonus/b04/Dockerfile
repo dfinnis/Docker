@@ -1,3 +1,4 @@
+## Debian with fortune | whalesay
 FROM ubuntu:14.04
 
 # install cowsay, and move the "default.cow" out of the way so we can overwrite it with "docker.cow"
@@ -12,4 +13,5 @@ RUN ln -sv /usr/share/cowsay/cows/docker.cow /usr/share/cowsay/cows/default.cow
 
 CMD ["cowsay"]
 
+# To run:
 # docker run docker/whalesay cowsay "Maximum Bonus Points"
