@@ -1,5 +1,6 @@
 # How to Docker
 
+## Setup
 
 **[1.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/01) Create a virtual machine with docker-machine using the virtualbox driver, and named Char.**
 
@@ -7,7 +8,6 @@
 docker-machine create --driver virtualbox Char
 ```
 To test run: ```docker-machine ls```
-<br>
 <br>
 
 
@@ -28,6 +28,8 @@ To test run: ```docker ps```
 <br>
 <br>
 
+
+## Containers
 
 **[4.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/04) Get the hello-world container from the Docker Hub, where it’s available.**
 
