@@ -31,8 +31,8 @@ Now you are ready to run docker commands and dockerfiles.
 
 * [**02_bonus**](https://github.com/dfinnis/Docker/tree/master/02_bonus) - More Dockerfiles
 
-  [0.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b00/Dockerfile) Debian web server (SSL) <br>
-  [1.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b01/Dockerfile) Debian with C dev environment <br>
-  [2.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b02/Dockerfile) Debian for basic network testing <br>
+  [0.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b00/Dockerfile) Debian with Python3 dev environment <br>
+  [1.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b01/Dockerfile) Debian for basic network testing <br>
+  [2.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b02/Dockerfile) Debian with C dev environment <br>
   [3.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b03/Dockerfile) Debian with fortune | cowsay generated images <br>
-  [4.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b04/Dockerfile) Debian with Python3 dev environment
+  [4.](https://github.com/dfinnis/Docker/blob/master/02_bonus/b04/Dockerfile) Debian web server (SSL) <br>
