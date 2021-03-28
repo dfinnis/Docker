@@ -1,3 +1,4 @@
+## Debian with fortune | cowsay
 FROM debian
 
 RUN apt-get update && apt-get upgrade -y && \
@@ -5,6 +6,6 @@ RUN apt-get update && apt-get upgrade -y && \
 
 ENTRYPOINT /usr/games/fortune | /usr/games/cowsay -f ghostbusters
 
-# making the cow speak
+# To build and run:
 # docker build -t b03 .
 # docker run -it --rm b03
