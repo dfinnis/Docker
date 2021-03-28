@@ -1,3 +1,4 @@
+## Ruby container for Rails applications
 FROM ruby
 
 RUN apt-get update && apt-get -y upgrade && \
