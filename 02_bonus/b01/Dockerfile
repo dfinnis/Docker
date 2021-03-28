@@ -1,12 +1,13 @@
+## Debian for basic network testing
 FROM debian
 
 RUN apt-get update && apt-get upgrade -y && \
 	apt-get install -y vim net-tools nmap
 
-# a basic local network scanning environment
-
+# To build and run:
 # docker build -t b01 .
 # docker run -it --rm b01
 
-# nmap 192.168.99.100
+# Scan the local network:
+# nmap {VM_IP}
 # exit
