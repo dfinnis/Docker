@@ -22,3 +22,14 @@ Intro to Docker and Dockerfiles
 See the [subject](https://github.com/dfinnis/Docker/blob/master/subject.pdf) for more details.
 
 #### Final Score 125/100
+
+
+## Getting started
+
+Install [VirtualBox](https://www.virtualbox.org/).
+
+Install *docker* and *docker-machine* with Brew. <br>
+```brew install docker``` <br>
+```brew install docker-machine```
+
+Now you are ready to run docker commands and dockerfiles.
