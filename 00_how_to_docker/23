@@ -1,3 +1,6 @@
+## Create an overlay-type internal network that you will name overmind.
+
 docker network create -d overlay overmind
 
+# To test run:
 # docker network ls
