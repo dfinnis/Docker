@@ -1,3 +1,4 @@
+## Debian with Python3 dev environment
 FROM debian
 
 RUN apt-get update && apt-get -y upgrade && \
@@ -8,8 +9,7 @@ RUN apt-get update && apt-get -y upgrade && \
 	COPY max.py max.py
 	RUN python3 max.py
 
-# a basic Python3 dev environment
-
+# To build and run:
 # docker build -t 00 .
 # docker run -it --rm 00
 # python3 max.py
