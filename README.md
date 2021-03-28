@@ -22,7 +22,7 @@ Now you are ready to run docker commands and dockerfiles.
 
 * [**00_how_to_docker**](https://github.com/dfinnis/Docker/tree/master/00_how_to_docker) - Docker commands
 
-* [**01_dockerfiles**](https://github.com/dfinnis/Docker/tree/master/01_dockerfiles) - Dockerfiles
+* [**01_dockerfiles**](https://github.com/dfinnis/Docker/tree/master/01_dockerfiles)
 
   [0.](https://github.com/dfinnis/Docker/blob/master/01_dockerfiles/ex00/Dockerfile) Alpine image with Vim editor <br>
   [1.](https://github.com/dfinnis/Docker/blob/master/01_dockerfiles/ex01/Dockerfile) Debian TeamSpeak server <br>
