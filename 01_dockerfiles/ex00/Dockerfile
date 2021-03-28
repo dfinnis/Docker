@@ -1,3 +1,4 @@
+## Alpine image with Vim editor
 FROM alpine
 
 RUN apk update \
