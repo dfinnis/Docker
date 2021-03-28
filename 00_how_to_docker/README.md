@@ -9,6 +9,7 @@ docker-machine create --driver virtualbox Char
 ```
 To test run: ```docker-machine ls```
 <br>
+<br>
 
 
 **[2.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/02) Get the IP address of the Char virtual machine.**
@@ -84,6 +85,8 @@ To launch an debian container: ```docker run -it --rm debian```
 <br>
 <br>
 
+
+## Volumes
 
 **[10.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/10) Create a volume named *hatchery*.**
 
@@ -175,6 +178,8 @@ To test, navigate to the following address in a web browser: {VM_IP}:3000
 <br>
 <br>
 
+
+## Swarm
 
 **[20.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/20) Create a local swarm, the Char virtual machine should be its manager.**
 
@@ -277,6 +282,8 @@ To test run:
 <br>
 <br>
 
+
+## Cleanup
 
 **[31.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/31) Force quit and delete all the services on the local swarm, in one command.**
 
