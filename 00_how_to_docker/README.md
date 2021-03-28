@@ -7,7 +7,7 @@ All the files can be run directly. For example:<br>
 
 ## Setup
 
-**[1.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/01) Create a virtual machine with docker-machine using the virtualbox driver, and named Char.**
+**[01.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/01) Create a virtual machine with docker-machine using the virtualbox driver, and named Char.**
 
 ```
 docker-machine create --driver virtualbox Char
@@ -17,7 +17,7 @@ To test run: ```docker-machine ls```
 <br>
 
 
-**[2.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/02) Get the IP address of the Char virtual machine.**
+**[02.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/02) Get the IP address of the Char virtual machine.**
 
 ```
 docker-machine ip Char
@@ -25,7 +25,7 @@ docker-machine ip Char
 <br>
 
 
-**[3.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/03) Define the variables needed by your virtual machine Char in the general env of your terminal, so that you can run the docker ps command without errors. You have to fix all four environment variables with one command, and you are not allowed to use your shell’s builtin to set these variables by hand.**
+**[03.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/03) Define the variables needed by your virtual machine Char in the general env of your terminal, so that you can run the docker ps command without errors. You have to fix all four environment variables with one command, and you are not allowed to use your shell’s builtin to set these variables by hand.**
 
 ```
 eval $(docker-machine env Char)
@@ -37,7 +37,7 @@ To test run: ```docker ps```
 
 ## Containers
 
-**[4.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/04) Get the hello-world container from the Docker Hub, where it’s available.**
+**[04.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/04) Get the hello-world container from the Docker Hub, where it’s available.**
 
 ```
 docker pull hello-world
@@ -47,7 +47,7 @@ To test run: ```docker image ls```
 <br>
 
 
-**[5.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/05) Launch the hello-world container, and make sure that it prints its welcome message, then leaves it.**
+**[05.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/05) Launch the hello-world container, and make sure that it prints its welcome message, then leaves it.**
 
 ```
 docker run hello-world
@@ -55,7 +55,7 @@ docker run hello-world
 <br>
 
 
-**[6.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/06) Launch an nginx container, available on Docker Hub, as a background task. It should be named overlord, be able to restart on its own, and have its 80 port attached to the 5000 port of Char. You can check that your container functions properly by visiting http://<ip-de-char>:5000 in your web browser.**
+**[06.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/06) Launch an nginx container, available on Docker Hub, as a background task. It should be named overlord, be able to restart on its own, and have its 80 port attached to the 5000 port of Char. You can check that your container functions properly by visiting http://<ip-de-char>:5000 in your web browser.**
 
 ```
 docker run -d -p 5000:80 --name overlord --restart=always nginx
@@ -65,7 +65,7 @@ To test navigate to the following address in a web browser: {VM_IP}:5000/
 <br>
 
 
-**[7.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/07) Get the internal IP address of the overlord container without starting its shell and in one command.**
+**[07.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/07) Get the internal IP address of the overlord container without starting its shell and in one command.**
 
 ```
 docker inspect -f '{{.NetworkSettings.IPAddress}}' overlord
@@ -73,7 +73,7 @@ docker inspect -f '{{.NetworkSettings.IPAddress}}' overlord
 <br>
 
 
-**[8.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/08) Launch a shell from an alpine container, and make sure that you can interact directly with the container via your terminal, and that the container deletes itself once the shell’s execution is done.**
+**[08.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/08) Launch a shell from an alpine container, and make sure that you can interact directly with the container via your terminal, and that the container deletes itself once the shell’s execution is done.**
 
 ```
 docker run -it --rm alpine /bin/sh
@@ -81,7 +81,7 @@ docker run -it --rm alpine /bin/sh
 <br>
 
 
-**[9.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/09) From the shell of a debian container, install via the container’s package manager everything you need to compile C source code and push it onto a git repo (of course, make sure before that the package manager and the packages already in the container are updated). For this exercise, you should only specify the commands to be run directly in the container.**
+**[09.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/09) From the shell of a debian container, install via the container’s package manager everything you need to compile C source code and push it onto a git repo (of course, make sure before that the package manager and the packages already in the container are updated). For this exercise, you should only specify the commands to be run directly in the container.**
 
 ```
 apt-get update && apt-get upgrade -y && apt-get install -y gcc make git
