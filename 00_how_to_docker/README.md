@@ -1,5 +1,10 @@
 # How to Docker
 
+All the files can be run directly. For example:<br>
+```./01```
+<br>
+
+
 ## Setup
 
 **[1.](https://github.com/dfinnis/Docker/blob/master/00_how_to_docker/01) Create a virtual machine with docker-machine using the virtualbox driver, and named Char.**
