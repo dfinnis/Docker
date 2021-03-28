@@ -76,5 +76,5 @@ CMD ["rails", "s", "-b", “0.0.0.0”, “-p”, "3000"]
 ```GIT_SSL_NO_VERIFY=true git clone <https://repo_address.git>```
 
 Port notes:
-* 443/80: HTTPS/internet
-* 22: SSH
+* 443/80 = HTTPS/internet
+* 22 = SSH
