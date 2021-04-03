@@ -4,7 +4,7 @@ Intro to Docker and Dockerfiles.
 
 See the [subject](https://github.com/dfinnis/Docker/blob/master/subject.pdf) for more details.
 
-#### Final Score 125/100
+*Final Score 125/100*
 
 
 ## Getting started
